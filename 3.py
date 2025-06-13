@@ -15,14 +15,14 @@ def show_files():
 def upload(files):
     for f in files:
         run(f'git add "{f}"')
-    run(f'git commit -m "auto add {" ".join(files)}"')
+    run(f'git commit -m "add {" ".join(files)}"')
     run('git push origin main')
     print("上传完成！")
 
 def rm_cached(files):
     for f in files:
         run(f'git rm --cached "{f}"')
-    run(f'git commit -m "auto remove {" ".join(files)} from repo only"')
+    run(f'git commit -m "remove {" ".join(files)} from repo only"')
     run('git push origin main')
     print("删除完成！（仅远程仓库，保留本地文件）")
 
