@@ -1,0 +1,111 @@
+
+/* 通用样式 */
+.chart-container-1 {
+    left: 80px;
+    padding: 20px;
+    width: 80%; /* 图表宽度 */
+    max-width: 800px; /* 限制最大宽度 */
+    background-color: #fafafa; /* 背景色 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影 */
+    display: flex;
+    position: absolute; /* 使用绝对定位 */
+    margin-top: 6px; /* 设置与上方 hr 的距离 */
+    flex-direction: column;
+    align-items: center;
+    height: 580px;
+}
+
+.chart-container-2 {
+    position: absolute; /* 使用绝对定位 */
+    right: 80px; /* 设置距离右边 40px */
+    margin-top: 6px; /* 设置与上方 hr 的距离 */
+    padding: 20px;
+    width: 80%; /* 图表宽度 */
+    max-width: 800px; /* 限制最大宽度 */
+    background-color: #fafafa; /* 背景色 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 580px;
+}
+
+/* 标题样式 */
+.chart-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+/* 图表容器样式 */
+.chart {
+    width: 100%;
+    height: 400px; /* 固定高度 */
+}
+
+/* 提示文本样式 */
+.chart-tooltip {
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.toggle-labels-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-labels-button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* 通用按钮样式 */
+.chart-actions button {
+    background-color: #4caf50; /* 默认绿色背景 */
+    color: white; /* 按钮文字颜色 */
+    border: none; /* 去掉默认边框 */
+    border-radius: 5px; /* 圆角按钮 */
+    padding: 10px 20px; /* 内边距 */
+    font-size: 14px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    margin-right: 10px; /* 按钮之间的间距 */
+    transition: all 0.3s ease; /* 添加交互过渡效果 */
+}
+
+/* 鼠标悬停时的按钮样式 */
+.chart-actions button:hover {
+    background-color: #45a049; /* 鼠标悬停时的深绿色背景 */
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2); /* 增加阴影效果 */
+}
+
+/* 比对模式按钮的特殊样式 */
+.chart-actions .compare-button {
+    background-color: #2196f3; /* 蓝色背景 */
+}
+
+.chart-actions .compare-button:hover {
+    background-color: #1e88e5; /* 鼠标悬停时的深蓝色背景 */
+}
+
+/* 禁用按钮样式 */
+.chart-actions button:disabled {
+    background-color: #bbb; /* 灰色背景 */
+    color: #fff; /* 灰色按钮文字 */
+    cursor: not-allowed; /* 禁止点击的鼠标效果 */
+    box-shadow: none; /* 去掉阴影 */
+}

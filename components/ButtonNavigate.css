@@ -1,0 +1,80 @@
+/* 主容器的样式 */
+.button-nav-container {
+    position: fixed; /* 固定定位，使其始终出现在页面顶部 */
+    height: 70px; /* 导航栏的高度 */
+    top: 0; /* 将导航栏置于页面顶部 */
+    left: 0; /* 确保导航栏从页面左侧开始 */
+    width: 100%; /* 导航栏宽度占满整个页面 */
+    background-color: #4c6ef5; /* 半透明的蓝色背景 */
+    z-index: 1000; /* 确保导航栏在页面其他内容的上方 */
+    display: flex; /* 使用flex布局来排列内容 */
+    justify-content: space-between; /* 左右分布，左侧和右侧内容分开对齐 */
+    align-items: center; /* 垂直居中对齐内容 */
+    padding: 10px 15px; /* 内边距，增加内容与边缘的距离 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加导航栏下方的阴影效果 */
+}
+
+/* 左侧按钮组的样式 */
+.nav-left {
+    position: fixed; /* 固定定位，使其始终保持在视口中 */
+    /*margin-left: 4px; !* 左侧的外边距 *!*/
+    height: 20px; /* 设置按钮组的高度 */
+    gap: 10px; /* 按钮之间的水平间距 */
+    top: 10px; /* 距离页面顶部的距离 */
+}
+
+/* 右侧按钮组的样式 */
+.nav-right {
+    position: fixed; /* 固定定位，使其始终保持在视口中 */
+    right: 20px; /* 距离窗口右侧的距离 */
+    top: 10px; /* 距离页面顶部的距离 */
+    /*padding-right: 10px; !* 添加右侧的内边距 *!*/
+    height: 20px; /* 设置按钮组的高度 */
+}
+
+/* 通用按钮样式 */
+.button-nav {
+    margin: 5px; /* 按钮的外边距 */
+    padding: 10px 10px; /* 按钮的内边距 */
+    font-size: 16px; /* 按钮文字的字体大小 */
+    color: white; /* 按钮文字颜色 */
+    background-color: #4800ff; /* 按钮背景颜色 */
+    border: none; /* 去掉按钮的边框 */
+    border-radius: 5px; /* 按钮的圆角边框 */
+    cursor: pointer; /* 鼠标悬停时显示手型光标 */
+    outline: none; /* 去掉按钮的轮廓 */
+    width: 120px; /* 按钮宽度 */
+    height: 40px;
+    transition: background-color 1s ease; /* 背景色变化的动画效果 */
+}
+
+/* 鼠标悬停时按钮样式 */
+.button-nav:hover {
+    background-color: #000000; /* 改变按钮背景为黑色 */
+}
+
+/* 隐藏按钮组的样式 */
+.absolute-buttons {
+    position: absolute; /* 绝对定位，使其相对于其父容器定位 */
+    top: 50px; /* 距离父容器顶部的距离 */
+    right: 40px; /* 靠右对齐，距离父容器右侧的距离 */
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 按钮垂直排列 */
+    gap: 2px; /* 按钮之间的垂直间距 */
+    background-color: rgba(0, 119, 255, 0.83); /* 隐藏按钮的背景颜色为白色 */
+    border: 1px solid rgba(0, 255, 60, 0.83); /* 添加边框，颜色为浅灰 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    border-radius: 5px; /* 隐藏按钮组的圆角边框 */
+    z-index: 10; /* 确保隐藏按钮组的显示层级高于其他内容 */
+    padding-right: 12px; /* 添加右侧内边距，增加与右侧的距离 */
+    width: 150px;
+    height: 310px;
+    cursor: pointer; /* 鼠标悬停时显示手型光标 */
+}
+
+/* 隐藏按钮内的样式 */
+.abs-button {
+    width: 100%; /* 按钮宽度占满父容器 */
+    text-align: left; /* 按钮文字左对齐 */
+}
+

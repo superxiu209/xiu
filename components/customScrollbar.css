@@ -1,0 +1,23 @@
+/* 默认全局滚动条样式 */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* 特定组件的滚动条样式 */
+.my-custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.my-custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #444;
+}

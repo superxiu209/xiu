@@ -1,0 +1,132 @@
+/* 容器样式 */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 下拉框容器 */
+.dropdown-container {
+  position: relative;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+/* 输入框样式 */
+.dropdown-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* 选中值样式 */
+.selected-value {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* 清除按钮样式 */
+.clear-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #aaa;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* 占位符样式 */
+.placeholder {
+  color: #aaa;
+}
+
+/* 下拉内容样式 */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* 左侧分组样式 */
+.left-list {
+  width: 100px;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+  max-height: 220px;
+}
+
+.left-list .group-item {
+  padding: 8px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.left-list .group-item:hover {
+  background-color: #bae7ff;
+}
+
+/* 右侧选项样式 */
+.right-options {
+  flex: 1;
+  padding: 8px;
+  overflow-y: auto;
+  max-height: 240px;
+}
+
+.right-options .option-item {
+  padding: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 4px;
+  margin: 2px 0;
+  transition: background-color 0.3s ease;
+}
+
+.right-options .option-item:hover {
+  background-color: #bae7ff;
+}
+
+.right-options .option-item.selected {
+  background-color: #bae7ff;
+}
+
+/* 按钮样式 */
+.confirm-button, .upload-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.confirm-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.upload-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* 错误信息样式 */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* 上传状态样式 */
+.upload-status {
+  margin-top: 10px;
+}

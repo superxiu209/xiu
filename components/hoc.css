@@ -1,0 +1,89 @@
+
+/* 整体容器 as 居中 */
+.pages-content .as {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    text-align: center;
+    background-color: rgba(0, 125, 179, 0.34);
+}
+
+.pages-content .as-0 {
+    /*background-color: #84ff00;*/
+    margin-left: 410px; /* 设置左边距 */
+    align-self: flex-start; /* 单独设置为左对齐 */
+    height: 100px; /* 设置父元素高度 */
+    display: flex; /* 使用 flex 布局让 h1 居中 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.pages-content .as-1 {
+    /*background-color: #007bff;*/
+    height: 100px;
+}
+
+.pages-content .as-0 h1, .as-1 h1 {
+    display: block; /* 让文字占满父元素 */
+    margin: 0; /* 去掉默认的外边距 */
+    line-height: 1; /* 设置文字行高，让其垂直居中 */
+}
+
+
+/* 两个as-1 的字体大小、字体类型和渐变颜色效果 */
+.pages-content .as-1 h1, .as-0 h1 {
+    font-size: 5rem; /* 调整字体大小 */
+    font-family: 'Arial', sans-serif; /* 设置字体类型 */
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet); /* 渐变颜色 */
+    -webkit-background-clip: text; /* 仅剪裁文字背景 */
+    -webkit-text-fill-color: transparent; /* 填充为透明，显示背景 */
+    animation: gradientAnimation 3s infinite; /* 渐变颜色动态效果 */
+}
+
+/* 渐变颜色动态效果的动画 */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*.pages-content .as-2 {*/
+/*    background-color: #cc0000;*/
+/*}*/
+/* as-1 的字体大小、字体类型和渐变颜色效果 */
+.pages-content .as-2 h1 {
+    font-size: 3rem; /* 调整字体大小 */
+    font-family: 'Arial', sans-serif; /* 设置字体类型 */
+    background-color: #007bff;
+    -webkit-background-clip: text; /* 仅剪裁文字背景 */
+    -webkit-text-fill-color: transparent; /* 填充为透明，显示背景 */
+    animation: gradientAnimation 3s infinite; /* 渐变颜色动态效果 */
+}
+
+/* as-3 的按钮样式 */
+.pages-content .as-3 button {
+    padding: 15px 30px; /* 调整按钮的高度和大小 */
+    font-size: 1.2rem; /* 调整字体大小 */
+    margin: 10px; /* 按钮间距 */
+    border: none;
+    border-radius: 5px;
+    background-color: #4800ff; /* 初始背景颜色 */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+/* 鼠标移入按钮时的效果 */
+.pages-content .as-3 button:hover {
+    background: linear-gradient(to right, #4800ff, white); /* 背景从灰到蓝的渐变 */
+    transform: scale(1.05); /* 鼠标移入时让按钮稍微放大 */
+}
+
+
