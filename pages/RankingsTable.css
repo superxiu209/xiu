@@ -1,0 +1,199 @@
+/* 表格样式：不用绝对定位，居中即可 */
+/* 宽度占父容器95%，表格居中 */
+.privatelists-1.rankings-table table {
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+}
+
+/* 表头和单元格 */
+.privatelists-1.rankings-table th,
+.privatelists-1.rankings-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+}
+
+/* 表头特殊样式 */
+.privatelists-1.rankings-table th {
+  background: linear-gradient(120deg, #007bff, #0056b3);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* 偶数行背景色 */
+.privatelists-1.rankings-table tr:nth-child(even) {
+  background-color: rgba(240, 248, 255, 0.7);
+}
+
+/* 鼠标悬停行效果 */
+.privatelists-1.rankings-table tr:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 分页栏样式：居中 */
+.privatelists-1.rankings-table .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* 分页按钮样式 */
+.privatelists-1.rankings-table .pagination button {
+  margin: 0 8px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.privatelists-1.rankings-table .pagination button:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.privatelists-1.rankings-table .pagination button.active {
+  background: linear-gradient(120deg, #007bff, #0056b3);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.privatelists-1.rankings-table .pagination button:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* 分数链接样式 */
+.score-link,
+.score-link:visited,
+.score-link:active,
+.score-link:focus {
+  color: #4800ff !important;
+  text-decoration: none;
+}
+
+/* 父容器绝对定位：控制整个榜单模块在页面中的位置 */
+.privatelists-2.rankings-table-2 {
+  position: absolute;    /* 让整个数据集榜单板块绝对定位 */
+  top: 100px;            /* 距离页面顶部200px */
+  right: 400px;          /* 距离页面右侧400px */
+  width: 30%;            /* 宽度占页面30% */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(120deg, #ffffff, #f3f4f6);
+  padding: 24px 0 24px 0;  /* 顶部和底部留点内边距 */
+  overflow: hidden;        /* 防止内容溢出 */
+}
+
+/* 标题样式：如果要特殊效果可以单独加class，这里为普通居中 */
+.privatelists-2.rankings-table-2 h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+  color: #1a237e;
+}
+
+/* 表格样式：不用绝对定位，宽度自适应父容器 */
+.privatelists-2.rankings-table-2 table {
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 18px;
+  text-align: center;
+  background: transparent;  /* 背景由父容器控制 */
+}
+
+/* 表头和单元格样式 */
+.privatelists-2.rankings-table-2 th,
+.privatelists-2.rankings-table-2 td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+}
+
+/* 表头特殊样式 */
+.privatelists-2.rankings-table-2 th {
+  background: linear-gradient(120deg, #007bff, #0056b3);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* 偶数行背景色 */
+.privatelists-2.rankings-table-2 tr:nth-child(even) {
+  background-color: rgba(240, 248, 255, 0.7);
+}
+
+/* 鼠标悬停行效果 */
+.privatelists-2.rankings-table-2 tr:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 分页栏样式：对齐居中 */
+.privatelists-2.rankings-table-2 .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* 分页按钮样式 */
+.privatelists-2.rankings-table-2 .pagination button {
+  margin: 0 8px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.privatelists-2.rankings-table-2 .pagination button:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.privatelists-2.rankings-table-2 .pagination button.active {
+  background: linear-gradient(120deg, #007bff, #0056b3);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.privatelists-2.rankings-table-2 .pagination button:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}

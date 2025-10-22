@@ -1,0 +1,271 @@
+/* 表格样式 */
+.history-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.history-table th {
+  background-color: #007bff;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.history-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.history-table tr:hover {
+  background-color: #d4e3fc;
+}
+
+/* 操作按钮样式 */
+.history-table button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.history-table button:hover {
+  background-color: #0056b3;
+}
+
+.history-table button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 分页栏样式 */
+.history-table .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.history-table .pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.history-table .pagination button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.history-table .pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.history-table .pagination button:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+
+
+.modal-backdrop-his {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.modal-content-his {
+  background: #fff;
+  padding: 32px 36px 24px 36px;
+  border-radius: 14px;
+  min-width: 340px;
+  max-width: 90vw;
+  box-shadow: 0 6px 32px 0 rgba(0,0,0,0.18), 0 1.5px 8px rgba(0,0,0,0.07);
+  position: relative;
+  animation: modalFadeIn-his 0.2s;
+}
+
+@keyframes modalFadeIn-his {
+  0%   { opacity: 0; transform: translateY(-32px) scale(.97);}
+  100% { opacity: 1; transform: translateY(0) scale(1);}
+}
+
+.modal-content-his h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+  color: #23272f;
+  text-align: center;
+  font-weight: 600;
+}
+
+.modal-content-his table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+}
+
+.modal-content-his td {
+  padding: 7px 10px;
+  border: none;
+  font-size: 1.32rem;
+  color: #333;
+}
+
+.modal-content-his tr:not(:last-child) td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.modal-content-his button {
+  display: block;
+  margin: 0 auto;
+  background: #3066f6;
+  color: #fff;
+  border: none;
+  padding: 9px 36px;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1.5px 5px rgba(48,102,246,0.09);
+  transition: background 0.18s;
+}
+
+.modal-content-his button:hover {
+  background: #2047b6;
+}
+
+/* 错题模态框遮罩层 */
+.modal-backdrop-his2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.3); /* 半透明黑色背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 错题模态框内容区域 */
+.modal-content-his2 {
+  width: 600px;             /* 宽度500px */
+  height: 700px;            /* 高度700px */
+  background: #fff;         /* 白色背景 */
+  border-radius: 8px;       /* 圆角 */
+  box-shadow: 0 2px 16px #5553; /* 阴影 */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+
+/* 错题表格容器（用于滚动） */
+.wrongs-table-container {
+  width: 100%;
+  height: 580px;           /* 内容区高度，支持滚动，不遮住按钮 */
+  overflow-y: auto;        /* 垂直滚动条 */
+  overflow-x: auto;        /* 水平滚动条 */
+  border: 1px solid #eee;  /* 浅灰边框 */
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;     /* 和按钮分隔开 */
+  box-sizing: border-box;
+}
+
+/* 错题表格样式 */
+.wrongs-table {
+  width: 100%;
+  font-size: 16px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.wrongs-table th, .wrongs-table td {
+  border: 1px solid #ddd;
+  padding: 4px 6px;
+  text-align: left;
+  vertical-align: top;
+  max-width: 260px; /* 控制最大宽度 */
+  white-space: pre-wrap; /* 保留换行 */
+}
+
+.wrongs-table th {
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* context/question/options 字段前缀淡色 */
+.field-label {
+  /*color: #888;*/
+  font-weight: bold;
+}
+
+/* 错题为空时的样式 */
+.wrongs-empty {
+  color: #a00;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 16px;
+}
+
+/* 关闭按钮样式 */
+.modal-close-btn {
+  margin: 10px auto 0 auto;
+  padding: 6px 30px;
+  background: #347cff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.modal-close-btn:hover {
+  background: #2255aa;
+}
+/* 居中样式，适用于错题详情表格的序号、模型回答、参考答案 */
+.center-cell-2 {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+/* 模型回答单元格红色（用于错题详情表格） */
+.center-cell-22 {
+  text-align: center !important;
+  vertical-align: middle !important;
+  color: #e53935; /* 红色 */
+}
+
+/* 错题表格行鼠标悬停高亮效果（带注释） */
+.wrongs-table tbody tr:hover {
+  background: #f0f6ff;    /* 鼠标悬停时的浅蓝色背景，可自行调整为你喜欢的颜色 */
+  transition: background 0.2s;
+  cursor: pointer;        /* 鼠标指针变成手型，提升交互感 */
+}

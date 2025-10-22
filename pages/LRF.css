@@ -1,0 +1,94 @@
+.pages-content-container-LRF {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    /*align-items: center;*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative; /* 设置相对定位，便于内部绝对定位 */
+}
+
+.pages-content-LRF1 {
+    position: absolute; /* 让图片容器绝对定位 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 宽度占满父容器 */
+    height: 100%; /* 高度占满父容器 */
+    z-index: 1; /* 设置图片的层级较低 */
+}
+
+.pages-content-LRF1 img {
+    width: 100%; /* 图片宽度占满容器 */
+    height: 100%; /* 图片高度占满容器 */
+    object-fit: cover; /* 保持图片比例裁剪以填满容器 */
+}
+
+.pages-content-LRF {
+    position: relative; /* 保持相对定位 */
+    z-index: 2; /* 确保内容在图片之上 */
+    background-color: rgba(249, 249, 249, 0.09); /* 半透明背景 */
+    /*background-color: white;*/
+    text-align: center;
+    margin-top: 180px;
+    /*float: right;*/
+    width: 400px;
+    height: 500px;
+    /*margin-right: 40px;*/
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-radius: 8px;
+    box-sizing: border-box; /* 包括内边距在宽度/高度计算中 */
+
+}
+
+/* 针对 h1 元素的样式 */
+.pages-content-LRF h1 {
+    font-size: 32px; /* 设置字体大小 */
+    font-family: Arial, sans-serif; /* 设置字体类型，例如 Arial 或其他字体 */
+    font-weight: bold; /* 设置字体加粗，可选值：normal, bold, bolder, lighter, 100-900 */
+    color: #4800ff; /* 设置字体颜色，例如深灰色 */
+}
+
+/* 定义 .div1 样式，用于分隔输入框区域 */
+.div1 {
+    margin-top: 50px; /* 元素与其上方内容的间距为 20 像素 */
+    margin-bottom: 20px; /* 元素与其下方内容的间距为 20 像素 */
+
+}
+
+/* 定义 .div1 内部 input 元素的样式，用于美化输入框 */
+.div1 input {
+    display: block; /* 设置为块级元素，使其独占一行 */
+    width: 100%; /* 输入框宽度占父容器的 100% */
+    margin: 10px 0; /* 上下外边距为 10 像素，左右外边距为 0 */
+    padding: 10px; /* 输入框内部的内容四周有 10 像素的内边距 */
+    font-size: 16px; /* 设置字体大小为 16 像素 */
+    border: 1px solid rgba(204, 204, 204, 0.01); /* 添加 1 像素的实线边框，颜色为浅灰色 (#ccc) */
+    border-radius: 4px; /* 设置边框圆角为 4 像素 */
+    background-color: #282c34;
+}
+
+/* 定义 .div2 样式，用于分隔按钮区域 */
+.div2 {
+    margin-top: 30px; /* 元素与其上方内容的间距为 20 像素 */
+}
+
+/* 定义 .div2 内部 button 元素的样式，用于美化按钮 */
+.div2 button {
+    width: 100%; /* 按钮宽度占父容器的 100% */
+    padding: 10px; /* 按钮内部的内容四周有 10 像素的内边距 */
+    font-size: 16px; /* 设置字体大小为 16 像素 */
+    color: rgba(144, 174, 238, 0.85); /* 设置按钮文字颜色为白色 (#fff) */
+    background-color: rgba(0, 9, 179, 0.94); /* 设置按钮背景颜色为蓝色 (#007bff) */
+    border: none; /* 移除按钮的默认边框 */
+    border-radius: 4px; /* 设置按钮边框圆角为 4 像素 */
+    cursor: pointer; /* 鼠标悬停在按钮上时显示为手型指针 */
+}
+
+/* 定义按钮的悬停状态样式 */
+.div2 button:hover {
+    background-color: rgba(0, 13, 255, 0.44); /* 鼠标悬停时背景颜色变为更深的蓝色 (#0056b3) */
+}

@@ -1,0 +1,156 @@
+
+/* =======================
+   页面整体样式
+======================= */
+.page-1 {
+    /*padding-top: 70px;*/
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中内容 */
+    align-items: center; /* 水平居中内容 */
+    padding: 20px; /* 页面内边距 */
+    background-color: #f9f9f9; /* 浅灰色背景，柔和干净 */
+    font-family: 'Arial', sans-serif; /* 使用简洁的字体 */
+    color: #333; /* 默认文字颜色 */
+}
+
+/* =======================
+   信息容器样式
+======================= */
+.px-1 {
+    background-color: white; /* 白色背景 */
+    width: 400px; /* 固定宽度 */
+    height: 600px;
+    border-radius: 12px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    padding: 20px; /* 内边距 */
+    margin: 20px 0; /* 上下外边距 */
+}
+
+/* =======================
+   用户信息显示区样式
+======================= */
+.px-11 p {
+    margin: 10px 0; /* 每段文字的上下间距 */
+    font-size: 16px; /* 字体大小 */
+    line-height: 1.5; /* 行高，增加可读性 */
+}
+
+.px-11 label {
+    display: block; /* 每个标签独占一行 */
+    margin-bottom: 10px; /* 下方间距 */
+    font-size: 14px; /* 标签字体大小 */
+    color: #555; /* 标签文字颜色 */
+}
+
+.px-11 input, .px-11 select {
+    width: 100%; /* 输入框宽度占满父容器 */
+    padding: 10px; /* 内边距 */
+    margin-top: 5px; /* 顶部间距 */
+    border: 1px solid #ddd; /* 边框颜色 */
+    border-radius: 8px; /* 圆角 */
+    box-sizing: border-box; /* 包括内边距 */
+    font-size: 14px; /* 输入框字体大小 */
+    background-color: #f9f9f9; /* 浅灰色背景 */
+    color: #333; /* 输入文字颜色 */
+    outline: none; /* 去掉默认的聚焦样式 */
+    transition: border-color 0.2s ease; /* 聚焦时的过渡效果 */
+}
+
+.px-11 input:focus, .px-11 select:focus {
+    border-color: #007BFF; /* 聚焦时边框变为蓝色 */
+    background-color: #fff; /* 聚焦时背景变为白色 */
+}
+
+/* 密码显示/隐藏按钮 */
+.px-11 button {
+    font-size: 12px; /* 按钮文字大小 */
+    padding: 6px 10px; /* 内边距 */
+    border-radius: 4px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    transition: color 0.2s ease, background-color 0.2s ease; /* 颜色过渡 */
+}
+
+.px-11 button:hover {
+    color: #0056b3; /* 蓝色加深 */
+}
+
+/* =======================
+   按钮样式
+======================= */
+.px-12 {
+    display: flex; /* 使用 Flex 布局 */
+    justify-content: center; /* 水平居中 */
+    gap: 15px; /* 按钮之间的间距 */
+    margin-top: 20px; /* 顶部间距 */
+}
+
+.edit-button, .save-button, .logout-button {
+    padding: 10px 20px; /* 内边距 */
+    border: none; /* 无边框 */
+    border-radius: 8px; /* 圆角 */
+    font-size: 14px; /* 按钮文字大小 */
+    font-weight: bold; /* 加粗文字 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 背景色和缩放过渡 */
+}
+
+.edit-button {
+    background-color: #007BFF; /* 蓝色背景 */
+    color: white; /* 白色文字 */
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时蓝色加深 */
+    transform: scale(1.05); /* 鼠标悬停时稍微放大 */
+}
+
+.save-button {
+    background-color: #28a745; /* 绿色背景 */
+    color: white; /* 白色文字 */
+}
+
+.save-button:hover {
+    background-color: #218838; /* 鼠标悬停时绿色加深 */
+    transform: scale(1.05); /* 鼠标悬停时稍微放大 */
+}
+
+.logout-button {
+    background-color: #ffc107; /* 黄色背景 */
+    color: white; /* 白色文字 */
+}
+
+.logout-button:hover {
+    background-color: #e0a800; /* 鼠标悬停时黄色加深 */
+    transform: scale(1.05); /* 鼠标悬停时稍微放大 */
+}
+
+/* =======================
+   消息提示样式
+======================= */
+.message {
+    text-align: center; /* 文本居中 */
+    font-size: 14px; /* 字体大小 */
+    margin-top: 20px; /* 顶部间距 */
+    padding: 10px; /* 内边距 */
+    border-radius: 8px; /* 圆角 */
+}
+
+.message.success {
+    background-color: #d4edda; /* 成功提示背景绿色 */
+    color: #155724; /* 成功提示文字绿色 */
+    border: 1px solid #c3e6cb; /* 边框绿色 */
+}
+
+.message.error {
+    background-color: #f8d7da; /* 错误提示背景红色 */
+    color: #721c24; /* 错误提示文字红色 */
+    border: 1px solid #f5c6cb; /* 边框红色 */
+}
+
+.message.info {
+    background-color: #d1ecf1; /* 信息提示背景蓝色 */
+    color: #0c5460; /* 信息提示文字蓝色 */
+    border: 1px solid #bee5eb; /* 边框蓝色 */
+}

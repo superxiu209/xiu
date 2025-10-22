@@ -1,0 +1,304 @@
+
+.input-group-0 {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 1px;
+    height: 70px;
+    /*background-color: #007bff;*/
+    gap: 100px; /* 设置子元素之间的间隔为 40px（推荐方式） */
+}
+
+.input-group-1 {
+    width: 500px;
+    height: 40px;
+    /*background-color: #3e8e41;*/
+    margin-left: 40px;
+}
+
+.input-group-2 {
+    width: 500px;
+    height: 40px;
+    /*background-color: #3e8e41;*/
+}
+
+
+.input-field-model {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 360px;
+}
+
+.confirm-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.confirm-button:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-1 {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-left: 100px;
+}
+
+.dropdown-option-1 {
+    padding: 8px;
+    cursor: pointer;
+}
+.dropdown-2 {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-left: 700px;
+    width: 270px;
+}
+
+.dropdown-option-2 {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+.display-text {
+    margin-top: 10px;
+}
+
+
+.clear-button {
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.title-word-1 {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #4c6ef5 0%, #a5cafc 100%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    /*border-radius: 8px;*/
+    margin-bottom: 10px;
+}
+
+/* 主区域样式 */
+.div10 {
+    display: flex; /* 使用 flex 布局 */
+    background-color: #f8f9fa; /* 浅灰色背景 */
+    gap: 100px; /* 设置子元素之间的间隔 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
+}
+
+/* 卡片样式 */
+.div11, .div12, .div13 {
+    background-color: white; /* 白色背景 */
+    width: 500px; /* 固定宽度 */
+    height: 640px; /* 固定高度 */
+    border-radius: 12px; /* 更大的圆角 */
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    transition: transform 0.2s ease-in-out; /* 鼠标悬停时的过渡效果 */
+}
+
+.div11:hover, .div12:hover, .div13:hover {
+    transform: translateY(-5px); /* 鼠标悬停时向上微动 */
+}
+
+/* 内容容器样式 */
+.content-container {
+    max-height: 480px; /* 调整最大高度 */
+    overflow-y: auto; /* 当内容超出时显示滚动条 */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* 浅灰色背景 */
+    border-radius: 8px; /* 添加圆角 */
+}
+
+/* 问题和回答框样式 */
+.display-box {
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 输入框容器 */
+.input-container {
+    background-color: #f1f3f5; /* 柔和的灰色背景 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #dee2e6;
+    border-radius: 0 0 8px 8px;
+}
+
+/* 输入框样式 */
+.input-box {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 提交按钮 */
+.submit-button {
+    padding: 10px 20px;
+    background-color: #4c6ef5; /* 柔和的蓝色 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #364fc7;
+}
+
+/* 下拉框样式 */
+.dropdown-1, .dropdown-2 {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.dropdown-option-1, .dropdown-option-2 {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-option-1:hover, .dropdown-option-2:hover {
+    background-color: #f8f9fa;
+}
+
+/* 滑块样式 */
+.div131 input[type="range"] {
+    width: 100%;
+    height: 8px;
+    appearance: none;
+    background: #dee2e6;
+    border-radius: 4px;
+    outline: none;
+    transition: background 0.2s ease-in-out;
+}
+
+.div131 input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #4c6ef5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.div131 input[type="range"]::-webkit-slider-thumb:hover {
+    background: #364fc7;
+}
+
+/* 确认和重置按钮 */
+.div132 button {
+    padding: 10px 20px;
+    background-color: #4c6ef5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.div132 button:hover {
+    background-color: #364fc7;
+}
+
+/* 提示信息样式 */
+.upload-status, .display-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #495057;
+}
+
+/* 主输入框容器 */
+.div21 {
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 600px;
+    display: flex;
+    margin-top: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮基础样式 */
+.restart-button {
+  background-color: #364fc7;; /* 按钮背景色：红色 */
+  color: white; /* 按钮文字颜色：白色 */
+  font-size: 16px; /* 字体大小 */
+  font-weight: bold; /* 加粗文字 */
+  padding: 10px 20px; /* 内边距 */
+  border: none; /* 去掉边框 */
+  border-radius: 25px; /* 圆角按钮 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 按钮阴影 */
+  cursor: pointer; /* 鼠标样式为手指 */
+  transition: all 0.3s ease; /* 过渡动画 */
+}
+
+/* 鼠标悬停时的效果 */
+.restart-button:hover {
+  background-color: #d9363e; /* 加深背景色 */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* 加深阴影 */
+  transform: translateY(-2px); /* 按钮稍微上移 */
+}
+
+/* 鼠标按下时的效果 */
+.restart-button:active {
+  background-color: #b71f24; /* 更深的背景色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 减弱阴影 */
+  transform: translateY(0); /* 按钮复位 */
+}

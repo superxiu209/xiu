@@ -1,0 +1,79 @@
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cancel-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.dropdown-container {
+    display: flex;
+    width: 30%;
+    border: 1px solid #ccc;
+}
+
+.left-div {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-div {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-div label {
+    margin-bottom: 5px;
+}
+
+
+
+
+.scroll-container-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.small-box {
+    flex: 0 0 180px;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.scroll-left, .scroll-right {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.center-box-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
